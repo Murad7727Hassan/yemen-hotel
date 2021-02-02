@@ -1,0 +1,295 @@
+*
+{
+    padding: 0px;
+    direction:rtl;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* start header*/
+
+.header
+{
+    width: 100%;
+    color: white;
+    position:fixed;
+    z-index: 1;
+    padding: 0 40px;
+    background-color: #3366cc;
+}
+
+.header .right
+{
+    float: right;
+    width: 50%;
+    height: 70px;
+    text-align: right;
+    font-size:25px;
+    font-weight: bold;
+    line-height: 70px;
+    letter-spacing: 2px;
+    background-repeat: no-repeat;
+     
+}
+ .header .right span
+{
+    color:aqua;
+}
+.header .left
+{
+    height: 70px;
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding: 1%;
+}
+.header .left .login
+{
+   background-color: #03a9f44a;
+   color: white;
+   border: 1px solid white;
+}
+.imageheader 
+{ 
+    background-image:url(../image/111111.png);
+    width: 100%;
+    height: 350px;
+    margin-bottom: 90px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+ .imageheader .element
+{
+    position:relative;
+    width: 100%;
+    height: 150px;
+    background-color:  rgba(1, 0, 0, 0.5);
+}
+@media(max-width:755px) 
+{
+    .imageheader
+    {
+      margin-bottom: 0px;  
+    }
+ .imageheader .element
+{
+    position:relative;
+    width: 100%;
+    height: 200px;
+    background-color:  rgba(1, 0, 0, 0.5);
+}   
+    .right
+    {
+       width: 100%;
+    }
+    .left
+    {
+        display: none;
+        width: 0%;
+    }
+    
+}
+@media(max-width:500px)   
+{
+  .imageheader .element
+{
+    position:relative;
+    width: 100%;
+    height: 300px;
+    background-color:  rgba(1, 0, 0, 0.5);
+}
+}
+
+.imageheader .element .data
+{
+    width: 100%;
+    height: 40px;
+    margin-top:50px;
+    border-radius: 5px;
+    padding-top: 1px;
+    text-align: center;
+}
+
+.imageheader .element .data form input ,select,button 
+{
+    background-color: white;
+    color: black;
+    font-size:20px;
+    width: 200px;
+    height: 35px;
+    margin: 5px 25px 10px 20px;
+    border-radius: 10px ;
+    text-align: center;
+    border:2px solid #ffffff;
+    transition: all .1s ease-out;
+}
+.imageheader .element .data form button[name="save"] 
+{
+    background-color:rgba(0,0,0,.5);
+    color: white;
+    color: white;
+    border:1px solid #ffffff;
+    font-weight: bold;
+    transition: .2s;
+}
+.imageheader .element .data form button[name="save"]:hover  
+{
+    background-color:#3366cc;
+    color: white;
+    border:2px solid #ffffff;
+    cursor: pointer;
+}
+input:hover
+{
+    transform: scale(1.1,1.1);
+     
+}
+select:hover
+{
+    transform: scale(1.1,1.1);
+    - 
+}
+
+
+/* end header*/
+
+/* start content*/
+
+.content
+{
+  width: 100%;
+  padding: 10px;
+  perspective: 600px;
+}
+.content .states
+{
+    width: 98%;
+    margin: 50px 10px 40px 10px;
+    padding: 0px 10px 30px 10px ;
+    direction: rtl;
+    display: inline-block;
+    -webkit-box-shadow: 0px 1px 5px #00cccc;
+}
+.content .states h1
+{
+    font-weight: bold;
+    margin:20px 70px 0px 0px;
+}
+.content .states .state
+{
+    width: 250px;
+    height: 250px;
+    margin-right: 60px;
+    margin-top: 50px;
+    margin-bottom:20px;
+    border: 1px solid #3399ff;
+    border-radius:5px;
+    -webkit-box-shadow: 0px 1px 5px #000033 ;
+    display: inline-block;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.content .states .state a
+{
+    text-decoration: none;
+}
+.content .states .state img
+{
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 10px 10px   #3366cc,    -1px -1px 0px #3366cc   ;
+    border-radius: 10%;
+    transition: all 3s ease-out;
+    direction: rtl;
+}
+.content .states .state span
+{
+    position: relative;
+    margin-right: 10px;
+    font-size:40px;
+    top: -60px;
+    color: white;
+    font-weight: bold;
+}
+.content .states .state span:hover
+{
+     cursor: pointer;
+}
+.content .states .state img:hover
+{
+ transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+  .menu  
+{
+    background: linear-gradient(to bottom, #004b6d 0%, #000910 100%);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin: 50px 0px 0px 0px;
+    box-sizing: border-box;
+    
+}
+ .menu .listone
+{
+    display: inline-block;
+    padding: 10px;
+    width: 14%;
+    margin-right: 60px;
+    margin-right: 5%;
+}
+@media(max-width:750px)
+{
+    .menu 
+    {
+        margin-top: 50px;
+    }
+   .menu .listone
+{
+    display: block;
+    padding: 10px;
+    width: 100%;
+} 
+    hr
+    {
+        width: 90%;
+    }
+}
+  .menu .listone ul 
+{
+     list-style: none;
+     margin-bottom: 10px;
+}
+.menu .listone ul h2
+{
+    margin-bottom: 5px;
+    text-align: center;
+}
+.menu .listone ul li
+{
+    line-height:3;
+    font-weight: bold;
+    text-align: center;
+}
+.menu .listone ul li:hover
+{
+     color: #3366cc;
+     cursor: pointer;
+}
+/* end content*/
+
+/* start footer*/
+
+footer
+{
+    text-align: center;
+    background-color:#3366cc;      
+    padding-top: 20px;
+    margin:0px ;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+}
+/* end footer*/

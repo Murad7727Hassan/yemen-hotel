@@ -1,0 +1,47 @@
+.content
+{
+ padding-top: 30px;    
+}
+.states
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left
+{
+    float: right;
+}
+aside
+{
+    float: left;
+    background-color: white;
+}
+.mainphoto
+{
+    width: 96%;
+    height: 450px;
+    margin:1% auto;
+    box-sizing: border-box;
+}
+img
+{
+    width: 100%;
+    height: 450px;
+}
+.partphoto
+{
+  margin:1% auto;
+  width: 96%;
+  display: flex;
+}
+.partphoto > div
+{
+  width: 23%;
+  height: 150px;
+  margin:10px;
+}
+.partphoto div img
+{
+    width: 100%;
+    height: 100%;
+}
